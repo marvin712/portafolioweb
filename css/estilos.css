@@ -1,0 +1,250 @@
+/* Variables */
+
+:root{
+    --primario:rgb(20,3,48);
+    --blanco:#fff;
+    --hover:rgb(41,6,97);
+    --secundario: rgb(255,193,7);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    font-size: 16px;
+    font-family:'Krub', sans-serif;
+    background-image: url(../img/pixeles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  /* Globales */
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.sombra{
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.contenedor{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+/* Encabezado */
+
+.header__item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section{
+    background-color: var(--primario);
+}
+
+.navegacion__enlace{
+    margin: 0;
+}
+@media (min-width:768px){
+    .navegacion__enlace{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.navegacion__enlace-item{
+    display: inline-block;
+    padding: 12px;
+    color: var(--blanco);
+    font-size: 18px;
+}
+.navegacion__enlace i{
+    margin-right: .5rem;
+}
+.navegacion__enlace-item a{
+    color: var(--blanco);
+    font-weight: 700;
+}
+
+.navegacion__enlace-item:hover{
+    background-color: var(--secundario);
+    color: var(--primario);
+}
+
+.navegacion__enlace-item a:hover{
+    color: var(--primario);
+}
+
+/* contenedor img */
+.contenedor-img{
+    background-image: url(../img/pexels-felix-mittermeier-956981.jpg);
+    height: 45rem;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+    color: var(--blanco);
+}
+.contenido-img{
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
+/* Btn */
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: var(--primario);
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:768px){
+    .btn_menu{
+        display: block;
+    }
+    .navegacion{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+   .navegacion.activo{
+    display: block;
+   }
+    .navegacion__enlace{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: var(--primario);
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    
+    }
+    .navegacion__enlace-item{
+        margin: 3rem 0 0 0 ;
+    }
+}
+/* Sobre mi */
+.sobre__mi-contenido{
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+.sobre__mi-texto p{
+    text-align: justify;
+    color: var(--primario);
+    font-size: 20px;
+}
+@media (min-width:768px){
+    .sobre__mi-contenido{
+        width: 50%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sobre__mi-texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Tecnologias */
+.tecnologias__img{
+    width: 35%;
+    margin: 0 auto;
+}
+.tecnologias__img span, .contacto__item span{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primario);
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px){
+    .tecnologias__contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px){
+    .tecnologias__contenedor{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Proyectos */
+.proyectos__item img:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* Contacto */
+.contacto{
+    margin: 0 auto;
+}
+.contacto__item{
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-contacto{
+    width: 70px;
+
+}
+.contacto__item a{
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px){
+    .contacto{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* Footer */
+.footer{
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer h3{
+    margin: 0;
+}
