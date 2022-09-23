@@ -87,13 +87,13 @@
             <div class="proyectos sombra">
                 <div class="proyectos__item">
                     <h3>Blog de Café</h3>
-                    <a href="https://blogdecafe1.herokuapp.com/" target="_blank">
+                    <a href="https://blogdecafe12.herokuapp.com/index.php" target="_blank">
                         <img src="img/blogdecafe.png" alt="">
                     </a>
                 </div>
                 <div class="proyectos__item">
                     <h3>Tienda en Linea</h3>
-                    <a href="https://tiendaenlineafrontend.herokuapp.com/" target="_blank">
+                    <a href="https://tiendaenlinea54.herokuapp.com/index.php" target="_blank">
                         <img src="img/tienda_enlinea.png" alt="">
                     </a>
                 </div>
